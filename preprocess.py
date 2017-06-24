@@ -5,7 +5,7 @@ reload(sys)
 sys.setdefaultencoding( "utf-8" )
 f = open('realdata.txt')
 line = f.readline()
-f_out = open('input.txt','w+')
+f_out = open('out.txt','w+')
 count = 0;
 while line:
     seg_list = jieba.cut(line, cut_all=False)
